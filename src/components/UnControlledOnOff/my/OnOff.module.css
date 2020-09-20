@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+}
+
+.indicator{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    border: 1px solid black
+}
+.offIdicator{
+    background-color: rgb(243, 7, 7);
+    
+}
+.onIndicator{
+    background-color: rgb(7, 243, 19);
+}
