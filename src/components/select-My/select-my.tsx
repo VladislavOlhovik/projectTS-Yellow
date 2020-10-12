@@ -13,7 +13,7 @@ type SelectPropsType = {
     titles:string
 }
 
-export function Select(props: SelectPropsType) {
+export function SelectMy(props: SelectPropsType) {
     const input={
         border:'red solid 1px',
         backgroundColor:'#8E6BC7',
