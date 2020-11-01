@@ -39,15 +39,16 @@ export const SetTimeoutExample = () => {
 
 
   useEffect(()=>{
-    setInterval(()=>{
+    let count = setInterval(()=>{
+      console.log('count');
       setCounter(state=>state+1)
+      setDate(new Date().toLocaleString())
     },1000)
-
+    return ()=>{
+      clearInterval(count)
+    }
   },[])
-  setInterval(() => {
-    let date = new Date().toLocaleString()
-    setDate(date)
-  }, 1000);
+  
  
   return (
     <>
