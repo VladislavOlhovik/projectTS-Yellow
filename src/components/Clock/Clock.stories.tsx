@@ -1,18 +1,15 @@
 import Clock from './Clock';
-import React, { useState } from 'react';
+import React from 'react';
 
 export default {
   title: 'Clock',
   component: Clock
 };
 
-export const BaseExample = ()=>{
-  const [mode,setMode] = useState(true)
-  return (
-    <>
-      <button onClick={()=>setMode(!mode)}>{mode?'Analog Clock':'Digital Clock'}</button>
-      <Clock mode={mode} />
-    </>
-  );
+export const BaseAnalogExample = ()=>{
+  return <Clock mode={'analog'} />
+}
+export const BaseDigitalExample = ()=>{
+  return <Clock mode={'digital'} />
 }
 
